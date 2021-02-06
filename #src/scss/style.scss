@@ -1,4 +1,6 @@
 @import '_fonts';
 @import '_variables';
+@import '_common';
 @import '_main';
-@import '_grid';
+
+@import 'components/header/header';
