@@ -1,6 +1,10 @@
-@import '_fonts';
-@import '_variables';
-@import '_common';
-@import '_main';
+@import 'common/_fonts';
+@import 'common/_variables';
+@import 'common/_common';
+@import 'common/_main';
 
 @import 'components/header/header';
+
+@import 'components/form/form';
+
+@import 'components/main-page/section-main';

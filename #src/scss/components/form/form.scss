@@ -1,0 +1,55 @@
+.form {
+	&__outer {
+		padding: 1.75vw;
+		border-radius: 1.875vw;
+		background-color: rgba($white, 0.25);
+		box-shadow: 0px 0px 0.9375vw 0.875vw rgba($black, 0.06);
+	}
+
+	&__inner {
+		padding: 1.875vw 2.8125vw;
+		border-radius: 1.875vw;
+		background-color: $white;
+		box-shadow: 0px 0px 0.9375vw 0.875vw rgba($black, 0.06);
+	}
+
+	&__title {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__title-text {
+		margin: 0 0 1.125vw;
+		max-width: 15.4375vw;
+		text-align: center;
+		font-size: 1.25vw;
+		font-weight: 700;
+		line-height: 148.9%;
+	}
+
+	&__field {
+		margin: 0 0 1.125vw;
+	}
+
+	&__sumbit-btn {
+		margin: 1.5vw 0 1.25vw;
+	}
+
+	&__policy {
+		position: relative;
+		margin: 0.9375vw 0;
+		display: flex;
+	}
+
+	&__add-info {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__add-text {
+		font-size: 0.8125vw;
+		line-height: 178.9%;
+	}
+}
