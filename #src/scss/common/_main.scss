@@ -1,6 +1,10 @@
 // === SECTION-CONTAINERS
 
-.section-outer {}
+.section-outer {
+	&--light-blue {
+		background-color: $light-blue;
+	}
+}
 
 .section-inner {
 	max-width: 81.25vw;
@@ -25,7 +29,11 @@
 	line-height: 156.9%;
 }
 
-.title-t2 {}
+.title-t2 {
+	font-size: 1.875vw;
+	font-weight: 700;
+	line-height: 170.9%;
+}
 
 .main-text {}
 
