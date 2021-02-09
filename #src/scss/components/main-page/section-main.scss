@@ -1,5 +1,8 @@
 .section-main {
-	position: relative;
+	&__outer {
+		position: relative;
+		padding: 6.25vw 0 9.0625vw;
+	}
 
 	&__background {
 		position: absolute;
@@ -18,12 +21,8 @@
 		height: auto;
 	}
 
-	&__outer {
-		position: relative;
-		padding: 6.25vw 0 9.0625vw;
-	}
-
 	&__inner {
+		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

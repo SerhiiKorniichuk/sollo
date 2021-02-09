@@ -425,8 +425,9 @@ button {
   line-height: 178.9%;
 }
 
-.section-main {
+.section-main__outer {
   position: relative;
+  padding: 6.25vw 0 9.0625vw;
 }
 
 .section-main__background {
@@ -452,12 +453,8 @@ button {
   height: auto;
 }
 
-.section-main__outer {
-  position: relative;
-  padding: 6.25vw 0 9.0625vw;
-}
-
 .section-main__inner {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
