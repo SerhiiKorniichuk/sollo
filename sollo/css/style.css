@@ -481,6 +481,57 @@ button {
   margin: 0 0 1.25vw;
 }
 
+.section-advantage__outer {
+  margin: -6.25vw 0 0;
+}
+
+.section-advantage__inner {
+  padding: 1.25vw;
+  min-height: 12.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 0.625vw;
+  background-color: #FFFFFF;
+}
+
+.section-advantage__item {
+  margin: 2.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantage-box__icon {
+  margin: 0 0 1.25vw;
+}
+
+.advantage-box__icon img {
+  width: 3vw;
+  height: auto;
+}
+
+.advantage-box__text {
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 178.9%;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation-duration: 0.01ms !important;
