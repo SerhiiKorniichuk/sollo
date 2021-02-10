@@ -7,6 +7,12 @@
 		}
 	}
 
+	&--about {
+		#{$parent}__outer {
+			padding: 3.75vw 0 0;
+		}
+	}
+
 	&__inner {
 		padding: 5vw 0;
 		display: flex;
@@ -49,8 +55,11 @@
 }
 
 .section-info-text-block {
-	&__title {
+	&__header {
 		margin: 0 0 2.8125vw;
+	}
+
+	&__title {
 		max-width: 33.9375vw;
 	}
 
@@ -89,5 +98,10 @@
 
 	&__row {
 		flex: auto;
+	}
+
+	&__description {
+		font-size: 1.125vw;
+		line-height: 199.9%;
 	}
 }

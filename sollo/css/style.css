@@ -551,6 +551,10 @@ button {
   padding: 3.75vw 0 0;
 }
 
+.section-info--about .section-info__outer {
+  padding: 3.75vw 0 0;
+}
+
 .section-info__inner {
   padding: 5vw 0;
   display: -webkit-box;
@@ -597,8 +601,11 @@ button {
   height: auto;
 }
 
-.section-info-text-block__title {
+.section-info-text-block__header {
   margin: 0 0 2.8125vw;
+}
+
+.section-info-text-block__title {
   max-width: 33.9375vw;
 }
 
@@ -649,6 +656,11 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+}
+
+.section-info-text-block__description {
+  font-size: 1.125vw;
+  line-height: 199.9%;
 }
 
 @media (prefers-reduced-motion: reduce) {
