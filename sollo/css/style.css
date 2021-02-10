@@ -449,10 +449,15 @@ button {
   margin: 0 0 -6.25vw;
 }
 
+.section-form--add .section-form__outer {
+  padding: 4vw 0;
+}
+
 .section-form__background {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
   max-width: 98vw;
   width: 100%;
   height: 100%;
@@ -470,6 +475,7 @@ button {
 .section-form__background img {
   width: 58.0625vw;
   height: auto;
+  max-height: 100%;
 }
 
 .section-form__inner {
@@ -489,12 +495,12 @@ button {
   max-width: 32.75vw;
 }
 
-.section-form__title {
-  margin: 0 0 0.625vw;
+.section-form__subtitle {
+  margin: 0.625vw 0 0;
 }
 
-.section-form__subtitle {
-  margin: 0 0 1.25vw;
+.section-form__main-text {
+  margin: 1.25vw 0 0;
 }
 
 .section-advantage {
