@@ -1,8 +1,15 @@
-.section-main {
+.section-form {
+	$parent: &;
+
 	&__outer {
 		position: relative;
-		padding: 6.25vw 0 9.0625vw;
-		margin: 0 0 -6.25vw;
+	}
+
+	&--main {
+		#{$parent}__outer {
+			padding: 6.25vw 0 9.0625vw;
+			margin: 0 0 -6.25vw;
+		}
 	}
 
 	&__background {

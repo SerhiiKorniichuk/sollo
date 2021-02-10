@@ -440,13 +440,16 @@ button {
   line-height: 178.9%;
 }
 
-.section-main__outer {
+.section-form__outer {
   position: relative;
+}
+
+.section-form--main .section-form__outer {
   padding: 6.25vw 0 9.0625vw;
   margin: 0 0 -6.25vw;
 }
 
-.section-main__background {
+.section-form__background {
   position: absolute;
   top: 0;
   left: 0;
@@ -464,12 +467,12 @@ button {
           justify-content: flex-end;
 }
 
-.section-main__background img {
+.section-form__background img {
   width: 58.0625vw;
   height: auto;
 }
 
-.section-main__inner {
+.section-form__inner {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,15 +485,15 @@ button {
           justify-content: space-between;
 }
 
-.section-main__info-box {
+.section-form__info-box {
   max-width: 32.75vw;
 }
 
-.section-main__title {
+.section-form__title {
   margin: 0 0 0.625vw;
 }
 
-.section-main__subtitle {
+.section-form__subtitle {
   margin: 0 0 1.25vw;
 }
 
