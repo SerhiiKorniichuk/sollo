@@ -672,6 +672,77 @@ button {
           flex: auto;
 }
 
+.section-contacts__outer {
+  position: relative;
+}
+
+.section-contacts__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.section-contacts__map #map {
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.section-contacts__outer {
+  padding: 5.9375vw 0;
+}
+
+.section-contacts__inner {
+  position: relative;
+  pointer-events: none;
+}
+
+.section-contacts__inner .contacts-box {
+  pointer-events: visible;
+}
+
+.contacts-box {
+  padding: 2.625vw 3.25vw;
+  display: inline-block;
+  border-radius: 1.875vw;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 0.9375vw 0.875vw rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 0px 0.9375vw 0.875vw rgba(0, 0, 0, 0.06);
+}
+
+.contacts-box__item {
+  margin: 0 0 2.1875vw;
+}
+
+.contacts-box__item:last-child {
+  margin: 0;
+}
+
+.contacts-box__title {
+  margin: 0 0 0.3125vw;
+  font-size: 1.125vw;
+  font-weight: 700;
+  line-height: 178.9%;
+}
+
+.contacts-box__link {
+  display: inline-block;
+  font-size: 0.875vw;
+  line-height: 178.9%;
+}
+
+.contacts-box__link--phone {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.contacts-box__link_inner {
+  display: block;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation-duration: 0.01ms !important;
