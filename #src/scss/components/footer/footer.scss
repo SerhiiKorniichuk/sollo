@@ -1,0 +1,28 @@
+.footer {
+	&__inner {
+		padding: 2.5vw 0;
+	}
+
+	&__company-info-box {
+		margin: 0 0 1vw;
+		display: flex;
+	}
+
+	&__company-name {
+		display: inline-block;
+		font-size: 1.125vw;
+		font-weight: 600;
+		line-height: 98.4%;
+	}
+
+	&__copyright {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&_text {
+			font-size: 1vw;
+			line-height: 98.4%;
+		}
+	}
+}

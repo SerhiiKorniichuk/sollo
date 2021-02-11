@@ -885,6 +885,41 @@ button {
   width: 26.875vw;
 }
 
+.footer__inner {
+  padding: 2.5vw 0;
+}
+
+.footer__company-info-box {
+  margin: 0 0 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__company-name {
+  display: inline-block;
+  font-size: 1.125vw;
+  font-weight: 600;
+  line-height: 98.4%;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__copyright_text {
+  font-size: 1vw;
+  line-height: 98.4%;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation-duration: 0.01ms !important;
