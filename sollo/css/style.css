@@ -463,11 +463,15 @@ button {
 }
 
 .section-form--main .section-form__outer {
-  padding: 6.25vw 0 9.0625vw;
+  padding: 0 0 4.0625vw;
   margin: 0 0 -6.25vw;
 }
 
-.section-form--add .section-form__outer {
+.section-form--main .section-form__inner {
+  padding: 5vw 0;
+}
+
+.section-form--add .section-form__inner {
   padding: 5vw 0;
 }
 

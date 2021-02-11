@@ -7,13 +7,17 @@
 
 	&--main {
 		#{$parent}__outer {
-			padding: 6.25vw 0 9.0625vw;
+			padding: 0 0 4.0625vw;
 			margin: 0 0 -6.25vw;
+		}
+
+		#{$parent}__inner {
+			padding: 5vw 0;
 		}
 	}
 
 	&--add {
-		#{$parent}__outer {
+		#{$parent}__inner {
 			padding: 5vw 0;
 		}
 	}
