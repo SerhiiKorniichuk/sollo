@@ -223,6 +223,19 @@ button {
   border-color: #b2b2b2;
 }
 
+.select {
+  padding: 0.6875vw 0.6875vw 0.6875vw 0;
+  width: 12.5vw;
+  color: #676767;
+  font-size: 0.8125vw;
+  line-height: 170.9%;
+  border-width: 0 0 1px 0;
+  border-color: #D8D8D8;
+  border-style: solid;
+  outline: none;
+  cursor: pointer;
+}
+
 .checkbox-input {
   position: absolute;
   top: 0;
@@ -777,6 +790,94 @@ button {
 
 .what-get-box__text {
   font-weight: 500;
+}
+
+.section-calculator__inner {
+  position: relative;
+}
+
+.section-calculator__inner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4.375vw;
+  width: 100%;
+  height: 4.375vw;
+  background: transparent url("../img/main-page/section-calculator/shadow.png") no-repeat center/contain;
+}
+
+.section-calculator__body {
+  margin: 4.6875vw 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-calculator__mini-title {
+  margin: 0 0 1vw;
+  font-size: 1vw;
+}
+
+.section-calculator__selects-box {
+  margin: 0 0 2.0625vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-calculator__selects-box_item {
+  margin: 0 3.75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-calculator__inputs-box {
+  margin: 2.0625vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-calculator__inputs-box_item {
+  margin: 0 1vw;
+}
+
+.section-calculator__button-box {
+  margin: 2.0625vw 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-calculator__button-box_item {
+  width: 26.875vw;
 }
 
 @media (prefers-reduced-motion: reduce) {

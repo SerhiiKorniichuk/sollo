@@ -112,6 +112,24 @@
 // === INPUT /
 
 
+// === SELECT
+
+.select {
+	padding: 0.6875vw 0.6875vw 0.6875vw 0;
+	width: 12.5vw;
+	color: $gray-text;
+	font-size: 0.8125vw;
+	line-height: 170.9%;
+	border-width: 0 0 1px 0;
+	border-color: $light-gray-t2;
+	border-style: solid;
+	outline: none;
+	cursor: pointer;
+}
+
+// === SELECT /
+
+
 // === CHECKBOX
 
 .checkbox-input {

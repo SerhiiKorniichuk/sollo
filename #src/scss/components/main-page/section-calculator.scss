@@ -1,0 +1,62 @@
+.section-calculator {
+	&__inner {
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -4.375vw;
+			width: 100%;
+			height: 4.375vw;
+			background: transparent url('../img/main-page/section-calculator/shadow.png') no-repeat center / contain;
+		}
+	}
+
+	&__body {
+		margin: 4.6875vw 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__mini-title {
+		margin: 0 0 1vw;
+		font-size: 1vw;
+	}
+
+	&__selects-box {
+		margin: 0 0 2.0625vw;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&_item {
+			margin: 0 3.75vw;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	
+	&__inputs-box {
+		margin: 2.0625vw 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&_item {
+			margin: 0 1vw;
+		}
+	}
+
+	&__button-box {
+		margin: 2.0625vw 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&_item {
+			width: 26.875vw;
+		}
+	}
+}
