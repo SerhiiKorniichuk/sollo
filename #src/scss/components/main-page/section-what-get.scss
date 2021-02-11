@@ -1,0 +1,27 @@
+.section-what-get {
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__item {
+		margin: 5vw 4.0625vw 0;
+		max-width: 17.8125vw;
+	}
+}
+
+.what-get-box {
+	&__icon {
+		margin: 0 0 1.5625vw;
+
+		& img {
+			width: auto;
+			height: 4vw;
+		}
+	}
+
+	&__text {
+		font-weight: 500;
+	}
+}

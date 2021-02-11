@@ -113,9 +113,14 @@ button {
 }
 
 .section-inner {
+  padding: 5vw 0;
   max-width: 81.25vw;
   width: 100%;
   margin: 0 auto;
+}
+
+.section-inner__title {
+  text-align: center;
 }
 
 .title-t1 {
@@ -480,6 +485,7 @@ button {
 
 .section-form__inner {
   position: relative;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,6 +703,7 @@ button {
 
 .section-contacts__inner {
   position: relative;
+  padding: 0;
   pointer-events: none;
 }
 
@@ -741,6 +748,35 @@ button {
 
 .contacts-box__link_inner {
   display: block;
+}
+
+.section-what-get__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-what-get__item {
+  margin: 5vw 4.0625vw 0;
+  max-width: 17.8125vw;
+}
+
+.what-get-box__icon {
+  margin: 0 0 1.5625vw;
+}
+
+.what-get-box__icon img {
+  width: auto;
+  height: 4vw;
+}
+
+.what-get-box__text {
+  font-weight: 500;
 }
 
 @media (prefers-reduced-motion: reduce) {
