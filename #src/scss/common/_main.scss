@@ -45,6 +45,10 @@
 	line-height: 178.9%;
 }
 
+.bold {
+	font-weight: 700;
+}
+
 // === TEXT /
 
 
@@ -123,7 +127,9 @@
 	border-width: 0 0 1px 0;
 	border-color: $light-gray-t2;
 	border-style: solid;
+	background: transparent url('../img/icons/select-arrow.svg') no-repeat center right 0.625vw / 0.6vw auto;
 	outline: none;
+	appearance:none;
 	cursor: pointer;
 }
 
