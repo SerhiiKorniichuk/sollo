@@ -15,7 +15,7 @@ const section_reviews_swiper = new Swiper('#section_reviews .swiper-container', 
 	},
 
 	breakpoints: {
-		320: {
+		0: {
 		  slidesPerView: 1.25,
 
 		},
