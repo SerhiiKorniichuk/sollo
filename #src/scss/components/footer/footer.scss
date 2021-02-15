@@ -26,3 +26,30 @@
 		}
 	}
 }
+
+@media screen and ( max-width: 768px ) {
+	.footer {
+		&__company-info-box {
+			margin: 0 0 4.25vw;
+		}
+	
+		&__company-name {
+			font-size: 3.75vw;
+		}
+	
+		&__copyright {
+			align-items: flex-start;
+			flex-direction: column;
+	
+			&_text {
+				margin: 0 0 4.25vw;
+				font-size: 3.75vw;
+				line-height: 180%;
+
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
