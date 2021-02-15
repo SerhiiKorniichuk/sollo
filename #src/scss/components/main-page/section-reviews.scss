@@ -19,6 +19,8 @@
 
 	&__image {
 		margin: 0 0 1.5625vw;
+		border-radius: 0.3125vw;
+		overflow: hidden;
 
 		& img {
 			width: 100%;
@@ -29,8 +31,6 @@
 
 	&__title-box {
 		margin: 0 0 0.5vw;
-		border-radius: 0.3125vw;
-		overflow: hidden;
 	}
 
 	&__title {
@@ -75,5 +75,83 @@
 		font-size: 1.5vw;
 		font-weight: 600;
 		line-height: 182.4%;
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+	.section-reviews {
+
+		.section-inner {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&__body {
+			padding: 0;
+			margin: 5vw 0 0;
+		}
+	
+		.review-card {
+			padding: 0 0 0 6.25vw;
+			margin: 0;
+			width: 100%;
+		}
+		
+		.swiper-pagination {
+			margin: 10.9375vw 0 0;
+		}
+
+		.swiper-button-prev, .swiper-button-next {
+			display: none;
+		}
+	}
+	
+	.review-card {
+		width: 72.5vw;
+	
+		&__image {
+			margin: 0 0 4vw;
+			border-radius: 1.5625vw;
+			overflow: hidden;
+	
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	
+		&__title-box {
+			margin: 0 0 0.5vw;
+		}
+	
+		&__title {
+			font-size: 3.75vw;
+	
+			& .bold {
+				font-size: 5vw;
+			}
+		}
+	
+		&__text-box {
+			margin: 0 0 3.75vw;
+		}
+	
+		&__main-text {
+			font-size: 3.75vw;
+		}
+	
+		& .price-box {
+			margin: 0 0 3.125vw;
+		}
+	}
+	
+	.price-box {
+		padding: 0.9375vw 4.0625vw;
+		border-radius: 1.5625vw;
+	
+		&__text {
+			font-size: 5vw;
+		}
 	}
 }

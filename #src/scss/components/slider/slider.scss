@@ -45,4 +45,20 @@
 	margin: 0 0.375vw;
 }
 
+@media screen and ( max-width: 768px ) {
+	.swiper-pagination-bullet {
+		width: 1.875vw;
+		height: 1.875vw;
+	}
+	
+	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+		width: 3.125vw;
+		height: 3.125vw;
+	}
+	
+	.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+		margin: 0 1.25vw;
+	}
+}
+
 // === SLIDER-PAGINATION /

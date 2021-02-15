@@ -5,8 +5,6 @@ $(document).ready(function() {
 	loop: true,
 	slidesPerView: 3,
 	autoHeight: true,
-	centeredSlides: true,
-	centeredSlidesBounds: true,
 
 	pagination: {
 	  el: '#section_reviews .swiper-pagination',
@@ -17,6 +15,16 @@ $(document).ready(function() {
 	  nextEl: '#section_reviews .swiper-button-next',
 	  prevEl: '#section_reviews .swiper-button-prev',
 	},
+
+	breakpoints: {
+		320: {
+		  slidesPerView: 1.25,
+
+		},
+		769: {
+		  slidesPerView: 3,
+		}
+	}
   
 });
 	// === GOOGLE MAP
