@@ -25,3 +25,35 @@
 		font-weight: 500;
 	}
 }
+
+@media screen and ( max-width: 768px ) {
+	.section-what-get {
+		&__body {
+			flex-direction: column;
+			align-items: center;
+		}
+	
+		&__item {
+			margin: 9.375vw 2vw 0;
+			max-width: 68.75vw;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	
+	.what-get-box {
+		&__icon {
+			margin: 0 0 2.1875vw;
+	
+			& img {
+				height: 11.25vw;
+			}
+		}
+	
+		&__description {
+			text-align: center;
+		}
+	}
+}

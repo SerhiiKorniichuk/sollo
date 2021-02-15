@@ -1140,6 +1140,43 @@ button {
   .section-info-image-block img {
     max-width: 56.25vw;
   }
+
+  .section-what-get__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .section-what-get__item {
+    margin: 9.375vw 2vw 0;
+    max-width: 68.75vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .what-get-box__icon {
+    margin: 0 0 2.1875vw;
+  }
+
+  .what-get-box__icon img {
+    height: 11.25vw;
+  }
+
+  .what-get-box__description {
+    text-align: center;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
