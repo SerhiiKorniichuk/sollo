@@ -1071,7 +1071,7 @@ button {
   .button-t1 {
     height: 16.875vw;
     width: 100%;
-    font-size: 3.75vw;
+    font-size: 4.375vw;
     border-radius: 100vw;
   }
 
@@ -1173,8 +1173,67 @@ button {
     width: 79.375vw;
   }
 
+  .section-advantage__outer {
+    padding: 0 6.25vw 0;
+    margin: 0 0 -40.625vw;
+  }
+
+  .section-advantage__inner {
+    padding: 7.1875vw 9.375vw;
+    min-height: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 3.125vw;
+    -webkit-box-shadow: 0px 0px 4.6875vw 4.375vw rgba(0, 0, 0, 0.03);
+            box-shadow: 0px 0px 4.6875vw 4.375vw rgba(0, 0, 0, 0.03);
+  }
+
+  .section-advantage__item {
+    margin: 0 0 4.6875vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .section-advantage__item:last-child {
+    margin: 0;
+  }
+
+  .advantage-box__icon {
+    margin: 0 5vw 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .advantage-box__icon img {
+    width: 8.125vw;
+  }
+
+  .advantage-box__text {
+    font-size: 3.75vw;
+  }
+
   .section-info--process-eu .section-info__outer {
-    padding: 0;
+    padding: 40.625vw 0 0;
   }
 
   .section-info--about .section-info__outer {
