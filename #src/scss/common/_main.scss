@@ -104,6 +104,15 @@
 	background-color: darken($dark-blue, 1%);
 }
 
+@media screen and ( max-width: 768px ) {
+	.button-t1 {
+		height: 16.875vw;
+		width: 100%;
+		font-size: 3.75vw;
+		border-radius: 100vw;
+	}
+}
+
 // === BUTTONS /
 
 
@@ -131,6 +140,20 @@
 	border-color: darken($light-gray-t2, 15%);
 }
 
+@media screen and ( max-width: 768px ) {
+	.input {
+		padding: 0 6.875vw;
+		height: 16.875vw;
+		width: 100%;
+		font-size: 3.125vw;
+		border-radius: 100vw;
+		border: 1px solid $light-gray-t2;
+		background-color: $white;
+		outline: none;
+		transition: all 0.5s $animation-type;
+	}
+}
+
 // === INPUT /
 
 
@@ -149,6 +172,15 @@
 	outline: none;
 	appearance:none;
 	cursor: pointer;
+}
+
+@media screen and ( max-width: 768px ) {
+	.select {
+		padding: 3.125vw 3.125vw 3.125vw 1.5625vw;
+		width: 100%;
+		font-size: 3.125vw;
+		background: transparent url('../img/icons/select-arrow.svg') no-repeat center right 2.8vw / 2.5vw auto;
+	}
 }
 
 // === SELECT /

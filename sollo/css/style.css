@@ -805,6 +805,7 @@ button {
 .section-calculator__mini-title {
   margin: 0 0 1vw;
   font-size: 1vw;
+  line-height: 100%;
 }
 
 .section-calculator__selects-box {
@@ -1062,12 +1063,40 @@ button {
     font-size: 3.75vw;
   }
 
+  .button-t1 {
+    height: 16.875vw;
+    width: 100%;
+    font-size: 3.75vw;
+    border-radius: 100vw;
+  }
+
+  .input {
+    padding: 0 6.875vw;
+    height: 16.875vw;
+    width: 100%;
+    font-size: 3.125vw;
+    border-radius: 100vw;
+    border: 1px solid #D8D8D8;
+    background-color: #FFFFFF;
+    outline: none;
+    -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .select {
+    padding: 3.125vw 3.125vw 3.125vw 1.5625vw;
+    width: 100%;
+    font-size: 3.125vw;
+    background: transparent url("../img/icons/select-arrow.svg") no-repeat center right 2.8vw/2.5vw auto;
+  }
+
   .section-info--process-eu .section-info__outer {
     padding: 0;
   }
 
   .section-info--about .section-info__outer {
-    padding: 0;
+    padding: 6vw 0 0;
   }
 
   .section-info--about .section-info-text-block__header {
@@ -1176,6 +1205,60 @@ button {
 
   .what-get-box__description {
     text-align: center;
+  }
+
+  .section-calculator__inner::before {
+    bottom: -8.75vw;
+    height: 8.75vw;
+  }
+
+  .section-calculator__body {
+    margin: 10.9375vw 0 0;
+  }
+
+  .section-calculator__mini-title {
+    padding-left: 1.5625vw;
+    margin: 0 0 1vw;
+    font-size: 3.75vw;
+  }
+
+  .section-calculator__selects-box {
+    margin: 0 0 3.125vw;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .section-calculator__selects-box_item {
+    margin: 0 0 6.875vw;
+    width: 100%;
+  }
+
+  .section-calculator__selects-box_item:last-child {
+    margin: 0 0 4.0625vw;
+  }
+
+  .section-calculator__inputs-box {
+    margin: 0;
+  }
+
+  .section-calculator__inputs-box_item {
+    margin: 3.125vw 0;
+    width: 100%;
+  }
+
+  .section-calculator__button-box {
+    margin: 3.125vw 0 0;
+    width: 100%;
+  }
+
+  .section-calculator__button-box_item {
+    width: 100%;
   }
 }
 

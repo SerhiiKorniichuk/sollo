@@ -24,6 +24,7 @@
 	&__mini-title {
 		margin: 0 0 1vw;
 		font-size: 1vw;
+		line-height: 100%;
 	}
 
 	&__selects-box {
@@ -58,6 +59,61 @@
 
 		&_item {
 			width: 26.875vw;
+		}
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+	.section-calculator {
+		&__inner {
+			&::before {
+				bottom: -8.75vw;
+				height: 8.75vw;
+			}
+		}
+	
+		&__body {
+			margin: 10.9375vw 0 0;
+		}
+	
+		&__mini-title {
+			padding-left: 1.5625vw;
+			margin: 0 0 1vw;
+			font-size: 3.75vw;
+		}
+	
+		&__selects-box {
+			margin: 0 0 3.125vw;
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+	
+			&_item {
+				margin: 0 0 6.875vw;
+				width: 100%;
+
+				&:last-child {
+					margin: 0 0 4.0625vw;
+				}
+			}
+		}
+		
+		&__inputs-box {
+			margin: 0;
+	
+			&_item {
+				margin: 3.125vw 0;
+				width: 100%;
+			}
+		}
+	
+		&__button-box {
+			margin: 3.125vw 0 0;
+			width: 100%;
+	
+			&_item {
+				width: 100%;
+			}
 		}
 	}
 }
