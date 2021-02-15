@@ -62,6 +62,10 @@
 	&__main-text {
 		margin: 1.25vw 0 0;
 	}
+
+	&__btn-box {
+		display: none;
+	}
 }
 
 @media screen and ( max-width: 768px ) {
