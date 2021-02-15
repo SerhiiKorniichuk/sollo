@@ -17,6 +17,13 @@
 	}
 }
 
+@media screen and ( max-width: 768px ) {
+	.section-inner {
+		padding: 10.9375vw	6.25vw;
+		max-width: 100vw;
+	}
+}
+
 // === SECTION-CONTAINERS /
 
 
@@ -47,6 +54,17 @@
 
 .bold {
 	font-weight: 700;
+}
+
+@media screen and ( max-width: 768px ) {
+	
+	.title-t2 {
+		font-size: 5vw;
+	}
+
+	.main-text {
+		font-size: 3.75vw;
+	}
 }
 
 // === TEXT /
