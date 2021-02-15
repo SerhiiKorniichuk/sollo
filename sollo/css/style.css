@@ -1052,6 +1052,14 @@ button {
     max-width: 100vw;
   }
 
+  .title-t1 {
+    font-size: 7.5vw;
+  }
+
+  .subtitle-t1 {
+    font-size: 4.375vw;
+  }
+
   .title-t2 {
     font-size: 5vw;
   }
@@ -1100,6 +1108,69 @@ button {
 
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 1.25vw;
+  }
+
+  .section-form--main .section-form__outer {
+    padding: 0 6.25vw 25vw;
+    margin: 0 0 -25vw;
+  }
+
+  .section-form--main .section-form__inner {
+    padding: 0 0 7.1875vw;
+  }
+
+  .section-form--add .section-form__outer {
+    padding: 10.9375vw 6.25vw;
+  }
+
+  .section-form--add .section-form__inner {
+    padding: 0;
+  }
+
+  .section-form--add .section-form__btn-box {
+    margin: 2.6875vw 0 0;
+  }
+
+  .section-form__background {
+    position: relative;
+    max-width: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .section-form__background img {
+    width: 75vw;
+  }
+
+  .section-form__inner {
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .section-form__form-box {
+    display: none;
+  }
+
+  .section-form__info-box {
+    max-width: none;
+    text-align: center;
+  }
+
+  .section-form__subtitle {
+    margin: 3.5625vw 0;
+  }
+
+  .section-form__btn-box {
+    margin: 6.25vw 0 0;
+    width: 79.375vw;
   }
 
   .section-info--process-eu .section-info__outer {
