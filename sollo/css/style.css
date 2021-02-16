@@ -296,6 +296,7 @@ button {
 }
 
 .header__inner {
+  position: relative;
   padding: 1.25vw 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,6 +304,10 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header__logo {
+  position: relative;
 }
 
 .header__info {
@@ -319,6 +324,20 @@ button {
 }
 
 .header__info .h-info:last-of-type {
+  margin: 0;
+}
+
+.header__mob-info {
+  padding: 0 6.25vw;
+  margin: 7.1875vw 0;
+  display: none;
+}
+
+.header__mob-info .h-info {
+  margin: 0 0 7.1875vw;
+}
+
+.header__mob-info .h-info:last-of-type {
   margin: 0;
 }
 
@@ -367,6 +386,7 @@ button {
 
 .h-info__ico-box {
   margin: 0 1.0625vw 0 0;
+  min-width: 2.1875vw;
   width: 2.1875vw;
   height: 2.1875vw;
   display: -webkit-box;
@@ -398,6 +418,103 @@ button {
 
 .h-info__text--bold {
   font-weight: 600;
+}
+
+.header-mob-menu-btn {
+  position: absolute;
+  top: 50%;
+  right: -5.625vw;
+  -webkit-transform: scale(0.5) translateY(-100%);
+      -ms-transform: scale(0.5) translateY(-100%);
+          transform: scale(0.5) translateY(-100%);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 21.875vw;
+  width: 21.875vw;
+  height: 21.875vw;
+  border-radius: 21.875vw;
+  background-color: #F6F6F6;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.header-mob-menu-btn__trigger {
+  position: relative;
+  z-index: 100;
+  display: block;
+  width: 10vw;
+  height: 8.4375vw;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-color: transparent;
+  background: none;
+  outline: none;
+}
+
+.header-mob-menu-btn__trigger span {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 0.9375vw;
+  background: #000000;
+  border-radius: 1px;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.header-mob-menu-btn__trigger span:nth-child(1) {
+  top: 0;
+}
+
+.header-mob-menu-btn__trigger span:nth-child(2) {
+  top: 3.125vw;
+}
+
+.header-mob-menu-btn__trigger span:nth-child(3) {
+  top: 3.125vw;
+}
+
+.header-mob-menu-btn__trigger span:nth-child(4) {
+  top: 6.25vw;
+}
+
+.header-mob-menu-btn._active .header-mob-menu-btn__trigger span:nth-child(1) {
+  top: 3.4375vw;
+  left: 50%;
+  width: 0%;
+}
+
+.header-mob-menu-btn._active .header-mob-menu-btn__trigger span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header-mob-menu-btn._active .header-mob-menu-btn__trigger span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header-mob-menu-btn._active .header-mob-menu-btn__trigger span:nth-child(4) {
+  top: 3.4375vw;
+  left: 50%;
+  width: 0;
 }
 
 .form__outer {
@@ -1101,8 +1218,13 @@ button {
   }
 
   .header__inner {
-    padding-top: 5vw;
+    padding-top: 0;
     padding-bottom: 0;
+    margin-top: 5vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .header__info {
@@ -1121,6 +1243,28 @@ button {
 
   .h-logo__text {
     font-size: 4.0625vw;
+  }
+
+  .h-info__ico-box {
+    margin: 0 5.3125vw 0 0;
+    min-width: 10.9375vw;
+    width: 10.9375vw;
+    height: 10.9375vw;
+    border-radius: 10.9375vw;
+  }
+
+  .h-info__text-box {
+    max-width: none;
+  }
+
+  .h-info__text {
+    font-size: 3.75vw;
+  }
+
+  .header-mob-menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .swiper-pagination-bullet {

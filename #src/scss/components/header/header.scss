@@ -1,8 +1,13 @@
 .header {
 	&__inner {
+		position: relative;
 		padding: 1.25vw 0;
 		display: flex;
 		justify-content: space-between;
+	}
+
+	&__logo {
+		position: relative;
 	}
 
 	&__info {
@@ -11,6 +16,21 @@
 
 		.h-info {
 			margin: 0 3.625vw 0 0;
+			
+			&:last-of-type {
+				margin: 0;
+			}
+		}
+	}
+
+	&__mob-info {
+		padding: 0 6.25vw;
+		margin: 7.1875vw 0;
+		display: none;
+
+		.h-info {
+			margin: 0 0 7.1875vw;
+			
 			&:last-of-type {
 				margin: 0;
 			}
@@ -48,6 +68,7 @@
 
 	&__ico-box {
 		margin: 0 1.0625vw 0 0;
+		min-width: 2.1875vw;
 		width: 2.1875vw;
 		height: 2.1875vw;
 		display: flex;
@@ -76,13 +97,95 @@
 	}
 }
 
+.header-mob-menu-btn {
+	$parent: &;
+
+	position: absolute;
+	top: 50%;
+	right: -5.625vw;
+	transform: scale(0.5) translateY(-100%);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	min-width: 21.875vw;
+	width: 21.875vw;
+	height: 21.875vw;
+	border-radius: 21.875vw;
+	background-color: $light-gray-t1;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+
+	&__trigger{
+		position: relative;
+		z-index: 100;
+		display: block;
+		width: 10vw;
+		height: 8.4375vw;
+		transform: rotate(0deg);
+		transition: all 0.25s $animation-type;
+		border-color: transparent;
+		background: none;
+		outline: none;
+		
+		span {
+			position: absolute;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 0.9375vw;
+			background: $black;
+			border-radius: 1px;
+			opacity: 1;
+			transform: rotate(0deg);
+			transition: all 0.25s $animation-type;
+			&:nth-child(1) {
+				top: 0;
+			}
+			&:nth-child(2) {
+				top: 3.125vw;
+			}
+			&:nth-child(3) {
+				top: 3.125vw;
+			}
+			&:nth-child(4) {
+				top: 6.25vw;
+			}
+		}
+	}
+	
+	&._active {
+		#{$parent}__trigger {
+			span {
+				&:nth-child(1) {
+					top: 3.4375vw;
+					left: 50%;
+					width: 0%;
+				}
+				&:nth-child(2) {
+					transform: rotate(45deg);
+				}
+				&:nth-child(3) {
+					transform: rotate(-45deg);
+				}
+				&:nth-child(4) {
+					top: 3.4375vw;
+					left: 50%;
+					width: 0;
+				}
+			}
+		}
+	}
+}
+
 @media screen and ( max-width: 768px ) {
 	.header {
 		&__inner {
-			padding-top: 5vw;
+			padding-top: 0;
 			padding-bottom: 0;
+			margin-top: 5vw; 	
+			flex-direction: column;
 		}
-	
+
 		&__info {
 			display: none;
 		}
@@ -102,5 +205,27 @@
 		&__text {
 			font-size: 4.0625vw;
 		}
+	}
+
+	.h-info {
+		&__ico-box {
+			margin: 0 5.3125vw 0 0;
+			min-width: 10.9375vw;
+			width: 10.9375vw;
+			height: 10.9375vw;
+			border-radius: 10.9375vw;
+		}
+
+		&__text-box {
+			max-width: none;
+		}
+
+		&__text {
+			font-size: 3.75vw;
+		}
+	}
+
+	.header-mob-menu-btn {
+		display: flex;
 	}
 }
