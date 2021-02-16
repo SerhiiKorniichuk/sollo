@@ -237,4 +237,21 @@
 	background-size: 0.6875vw auto;
 }
 
+@media screen and ( max-width: 768px ) {
+	.checkbox-label {
+		font-size: 2.5vw;
+	}
+
+	.checkbox-label::before {
+		margin: 0 2vw 0 0;
+		width: 3.125vw;
+		height: 3.125vw;
+		border-radius: 0.9375vw;
+	}
+
+	.checkbox-input:checked + .checkbox-label::before {
+		background-size: 1.9vw auto;
+	}
+}
+
 // === CHECKBOX /

@@ -40,6 +40,7 @@
 		position: relative;
 		margin: 0.9375vw 0;
 		display: flex;
+		justify-content: center;
 	}
 
 	&__add-info {
@@ -51,5 +52,59 @@
 	&__add-text {
 		font-size: 0.8125vw;
 		line-height: 178.9%;
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+	.form {
+		&__outer {
+			padding: 6.25vw;
+			border-radius: 9.375vw;
+			box-shadow: 0px 0px 4.6875vw 4.375vw rgba($black, 0.06);
+		}
+	
+		&__inner {
+			padding: 9.375vw 6.25vw;
+			border-radius: 9.375vw;
+			box-shadow: 0px 0px 4.6875vw 4.375vw rgba($black, 0.06);
+		}
+	
+		&__title-text {
+			margin: 0 0 5.625vw;
+			max-width: 77.1875vw;
+			font-size: 5vw;
+		}
+	
+		&__field {
+			margin: 0 0 5.625vw;
+		}
+	
+		&__sumbit-btn {
+			margin: 7.5vw 0 6.25vw;
+		}
+	
+		&__policy {
+			margin: 4.6875vw 0;
+		}
+	
+		&__add-text {
+			font-size: 3.4375vw;
+		}
+
+		.form__field {
+			margin: 0 0 4.6875vw;
+		}
+
+		.form__sumbit-btn {
+			margin: 4.6875vw 0;
+		}
+
+		.input {
+			height: 14.375vw;
+		}
+
+		.button-t1 {
+			height: 14.375vw;
+		}
 	}
 }

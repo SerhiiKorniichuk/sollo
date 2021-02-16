@@ -5,6 +5,26 @@ $('.header-mob-menu-btn').on('click', function(e) {
 })
 
 
+$('button[data-popup]').on('click', function (e) {
+	e.preventDefault()
+	let attrVal = $(this).data('popup')
+	$(`div[data-popup='${attrVal}']`).addClass('_active')
+})
+
+$('.popup').find('.popup-btn-close').on('click', function () {
+	$(this).closest('div.popup').removeClass('_active')
+})
+
+
+$(document).mouseup(function (e) {
+		
+	const popup = $('.popup')
+
+	if (popup.has(e.target).length === 0) {
+		$(e.target).removeClass('_active')
+	}
+})
+
 
 $(window).resize(function() {
 

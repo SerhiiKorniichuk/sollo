@@ -1,0 +1,124 @@
+.popup {
+	$parent: &;
+
+	z-index: 101;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba($white, 0.88);
+	transition: all 0.3s $animation-type;
+	pointer-events: none;
+	opacity: 0;
+
+	&._active {
+		pointer-events: visible;
+		opacity: 1;
+	}
+
+	&__inner {
+		position: relative;	
+	}
+
+	&__btn-close {
+		position: absolute;
+		top: -1.75vw;
+		right: 1.75vw;
+	}
+}
+
+.popup-btn-close {
+	color: $gray-text;
+	font-size: 0.75vw;
+	font-weight: 500;
+	line-height: 125.9%;
+	text-decoration: underline;
+	border: none;
+	background: none;
+	outline: none;
+}
+
+.thanks-box {
+	padding: 2.375vw 2.5625vw;
+	display: flex;
+	align-items: center;
+
+	&__image {
+		margin: 0 2.125vw 0 0;
+		width: 7.75vw;
+		height: 7.75vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__title {
+		font-size: 1.875vw;
+		font-weight: 700;
+		line-height: 171.9%;
+	}
+
+	&__subtitle {
+		font-size: 1.25vw;
+		font-weight: 500;
+		line-height: 171.9%;
+	}
+
+	&__text {
+		margin: 0.375vw 0 0;
+		font-size: 0.875vw;
+		line-height: 171.9%;
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+	.popup {
+		&__btn-close {
+			top: -6.25vw;
+			right: 6.25vw;
+		}
+	}
+
+	.popup-btn-close {
+		font-size: 2.8125vw;
+	}
+
+	.thanks-box {
+		padding: 3.125vw;
+		flex-direction: column;
+		align-items: center;
+
+		&__image {
+			margin: 0 0 3.125vw 0;
+			width: 23.75vw;
+			height: 23.75vw;
+		}
+
+		&__description {
+			text-align: center;
+		}
+
+		&__title {
+			font-size: 6.25vw;
+
+		}
+
+		&__subtitle {
+			font-size: 4.375vw;
+		}
+
+		&__text {
+			margin: 4.0625vw 0 0;
+			font-size: 3.75vw;
+		}
+	}
+}
