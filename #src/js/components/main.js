@@ -17,11 +17,12 @@ $('.popup').find('.popup-btn-close').on('click', function () {
 
 
 $(document).mouseup(function (e) {
-		
-	const popup = $('.popup')
 
-	if (popup.has(e.target).length === 0) {
-		$(e.target).removeClass('_active')
+	const target = e.target		
+	const popup = '.popup'
+
+	if ($(target).is('.popup._active') && $(popup).has(target).length === 0) {
+		$(target).removeClass('_active')
 	}
 })
 
