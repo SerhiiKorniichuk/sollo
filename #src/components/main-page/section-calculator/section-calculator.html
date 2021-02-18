@@ -4,61 +4,69 @@
 			<div class="section-inner__title">
 				<h2 class="title-t2">Расчёт стоимости растаможки авто</h2>
 			</div>
-			<form action="" class="section-calculator__body">
+			<form action="#" class="form section-calculator__body">
 				<div class="section-calculator__selects-box">
 					<div class="section-calculator__selects-box_item">
 						<span class="section-calculator__mini-title">Год авто</span>
-						<select name="select_1" id="select_1" class="select">
-							<option value="2020">2020</option>
-							<option value="2019">2019</option>
-							<option value="2018">2018</option>
-							<option value="2017">2017</option>
-							<option value="2016">2016</option>
-							<option value="2015">2015</option>
+						<select name="year_car" id="select_year_car" class="select">
+							<option value="Выбрать" selected>Выбрать</option>
+							<option value="2000-2005">2000 - 2005</option>
+							<option value="2005-2010">2005 - 2010</option>
+							<option value="2010-2015">2010 - 2015</option>
+							<option value="2015-2020">2015 - 2020</option>
 						</select>
 					</div>
 					<div class="section-calculator__selects-box_item">
-						<span class="section-calculator__mini-title">Объем двигателя</span>
-						<select name="select_2" id="select_2" class="select">
-							<option value="1.2">1.2</option>
-							<option value="1.3">1.3</option>
-							<option value="1.4">1.4</option>
-							<option value="1.5">1.5</option>
-							<option value="1.6">1.6</option>
-							<option value="1.7">1.7</option>
+						<span class="section-calculator__mini-title">Тип кузова</span>
+						<select name="type_car" id="select_type_car" class="select">
+							<option value="Выбрать" selected>Выбрать</option>
+							<option value="Универсал">Универсал</option>
+							<option value="Лифтбэк">Лифтбэк</option>
+							<option value="Хэтчбек">Хэтчбек</option>
+							<option value="Седан">Седан</option>
+							<option value="Кабриолет">Кабриолет</option>
+							<option value="Внедорожник">Внедорожник</option>
+							<option value="Пикап">Пикап</option>
+							<option value="Кроссовер">Кроссовер</option>
+							<option value="Фургон">Фургон</option>
+							<option value="Лимузин">Лимузин</option>
+							<option value="Купе">Купе</option>
 						</select>
 					</div>
 					<div class="section-calculator__selects-box_item">
 						<span class="section-calculator__mini-title">Стоимость авто</span>
-						<select name="select_3" id="select_3" class="select">
-							<option value="1">1000$</option>
-							<option value="1">2000$</option>
-							<option value="1">3000$</option>
-							<option value="1">4000$</option>
-							<option value="1">5000$</option>
-							<option value="1">6000$</option>
+						<select name="price_car" id="select_price_car" class="select">
+							<option value="Выбрать" selected>Выбрать</option>
+							<option value="4000$-7000$">4000$ - 7000$</option>
+							<option value="7000$-10000$">7000$ - 10000$</option>
+							<option value="10000$-13000$">10000$ - 13000$</option>
+							<option value="13000$-16000$">13000$ - 16000$</option>
+							<option value="16000$-20000$">16000$ - 20000$</option>
+							<option value="20000$-50000$">20000$ - 50000$</option>
+							<option value="50000$+">50000$+</option>
 						</select>
 					</div>
 					<div class="section-calculator__selects-box_item">
 						<span class="section-calculator__mini-title">Тип двигателя</span>
-						<select name="select_4" id="select_4" class="select">
-							<option value="1">Бензин</option>
-							<option value="1">Дизель</option>
-							<option value="1">Гибрид</option>
-							<option value="1">Электро</option>
+						<select name="type_engine" id="select_type_engine" class="select">
+							<option value="Выбрать" selected>Выбрать</option>
+							<option value="Бензин">Бензин</option>
+							<option value="Дизель">Дизель</option>
+							<option value="Гибрид">Гибрид</option>
+							<option value="Электро">Электро</option>
 						</select>
 					</div>
 				</div>
 				<div class="section-calculator__inputs-box">
 					<div class="section-calculator__inputs-box_item">
-						<input type="text" class="input" placeholder="Ваше имя">
+						<input type="text" name="name" class="input _req" placeholder="Ваше имя">
 					</div>
 					<div class="section-calculator__inputs-box_item">
-						<input type="text" class="input" placeholder="Ваш телефон">
+						<input type="tel" name="phone" class="input _req" placeholder="Ваш телефон">
 					</div>
 				</div>
 				<div class="section-calculator__button-box">
-					<button class="button-t1 section-calculator__button-box_item">Рассчитать стоимость</button>
+					<button type="submit" class="button-t1 section-calculator__button-box_item">Рассчитать стоимость</button>
 				</div>
 			</form>
 		</div>

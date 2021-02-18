@@ -5,3 +5,5 @@ $(document).ready(function() {
 	@@include('components/google-map.js')
 	
 })
+
+@@include('components/form-sending.js')

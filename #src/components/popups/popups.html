@@ -1,27 +1,27 @@
 <div class="popup" data-popup="get-price">
 	<div class="popup__inner">
 		<button class="popup-btn-close popup__btn-close">Закрыть</button>
-		<form action="#" class="form">
-			<div class="form__outer">
-				<div class="form__inner">
-					<div class="form__title">
-						<h3 class="form__title-text">Просчитать стоимость вашего автомобиля</h3>
+		<form action="#" class="form form-box">
+			<div class="form-box__outer">
+				<div class="form-box__inner">
+					<div class="form-box__title">
+						<h3 class="form-box__title-text">Просчитать стоимость вашего автомобиля</h3>
 					</div>
-					<div class="form__field">
-						<input type="text" class="input form__input" placeholder="Имя">
+					<div class="form-box__field">
+						<input type="text" name="name" class="input form-box__input _req" placeholder="Имя">
 					</div>
-					<div class="form__field">
-						<input type="text" class="input form__input" placeholder="Телефон">
+					<div class="form-box__field">
+						<input type="tel" name="phone" class="input form-box__input _req" placeholder="Телефон">
 					</div>
-					<div class="form__sumbit-btn">
-						<button class="button button-t1 button-t1--dark-blue form-t1__button" data-popup="thanks">Отправить</button>
+					<div class="form-box__sumbit-btn">
+						<button type="submit" class="button button-t1 button-t1--dark-blue form-box-t1__button">Отправить</button>
 					</div>
-					<div class="form__policy">
-						<input type="checkbox" id="checkbox_form_main_3" class="checkbox-input form__chekbox-input" checked>
-						<label for="checkbox_form_main_3" class="checkbox-label form__checkbox-label">Согласен на обработку персональных данных</label>
+					<div class="form-box__policy">
+						<input type="checkbox" id="checkbox_form_box_popup" class="checkbox-input form-box__chekbox-input _req" checked>
+						<label for="checkbox_form_box_popup" class="checkbox-label form-box__checkbox-label">Согласен на обработку персональных данных</label>
 					</div>
-					<div class="form__add-info">
-						<span class="form__add-text">Консультация бесплатная</span>
+					<div class="form-box__add-info">
+						<span class="form-box__add-text">Консультация бесплатная</span>
 					</div>
 				</div>
 			</div>
@@ -29,12 +29,12 @@
 	</div>
 </div>
 
-<div class="popup" data-popup="thanks">
+<div class="popup" id="thanks_popup">
 	<div class="popup__inner">
 		<button class="popup-btn-close popup__btn-close">Закрыть</button>
-		<div class="form">
-			<div class="form__outer">
-				<div class="form__inner">
+		<div class="form-box">
+			<div class="form-box__outer">
+				<div class="form-box__inner">
 					<div class="thanks-box">
 						<div class="thanks-box__image">
 							<img src="./img/popups/success.svg" alt="Image">

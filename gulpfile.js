@@ -10,6 +10,8 @@ let path = {
 	// Пути вывода файлов для dist
 	build: {
 		html: project_folder + '/',
+		php: project_folder + '/',
+		php_mailer: project_folder + '/phpmailer',
 		css_library: project_folder + '/css/library',
 		css: project_folder + '/css/',
 		js_library: project_folder + '/js/library',
@@ -20,6 +22,8 @@ let path = {
 	src: {
 		// Пути используемых файлов #src
 		html: [source_folder + '/*.html', '!' + source_folder + '/_*.html'],
+		php: source_folder + '/*.php',
+		php_mailer: source_folder + '/phpmailer/**/*',
 		css_library: source_folder + '/css/library/**/*.{min.css,css}',
 		css: source_folder + '/scss/style.scss',
 		js_library: source_folder + '/js/library/**/*.{min.js,js}',
@@ -30,6 +34,7 @@ let path = {
 	watch: {
 		// Пути к файлом которые постояно обрабатываются слушателем событий
 		html: source_folder + '/**/*.html',
+		php: source_folder + '/*.php',
 		css: source_folder + '/scss/**/*.scss',
 		js: source_folder + '/js/**/*.js',
 		img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
@@ -68,6 +73,17 @@ function html() {
 		.pipe(fileinclude())
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream())
+}
+
+function php() {
+	return src(path.src.php)
+		.pipe(dest(path.build.php))
+		.pipe(browsersync.stream())
+}
+
+function phpMailer() {
+	return src(path.src.php_mailer)
+		.pipe(dest(path.build.php_mailer))
 }
 
 function cssLibrary() {
@@ -152,6 +168,7 @@ function cb() {}
 
 function watchFiles(params) {
 	gulp.watch([path.watch.html], html)
+	gulp.watch([path.watch.php], php)
 	gulp.watch([path.watch.css], css)
 	gulp.watch([path.watch.js], js)
 	gulp.watch([path.watch.img], images)
@@ -161,10 +178,12 @@ function clean(params) {
 	return del(path.clean)
 }
 
-let build = gulp.series(clean, gulp.parallel(html, cssLibrary, css, jsLibrary, js, images, fonts))
+let build = gulp.series(clean, gulp.parallel(html, php, phpMailer, cssLibrary, css, jsLibrary, js, images, fonts))
 let watch = gulp.parallel(build, watchFiles, browserSync)
 
 exports.html = html
+exports.php = php
+exports.phpMailer = phpMailer
 exports.cssLibrary = cssLibrary
 exports.css = css
 exports.jsLibrary = jsLibrary
