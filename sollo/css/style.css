@@ -342,7 +342,7 @@ label {
 }
 
 .header__mob-info {
-  padding: 0 6.25vw;
+  padding: 0 2.25vw;
   margin: 7.1875vw 0;
   display: none;
 }
@@ -420,11 +420,8 @@ label {
   width: 35%;
 }
 
-.h-info__text-box {
-  max-width: 14.1875vw;
-}
-
 .h-info__text {
+  margin-bottom: 0.2vw;
   font-size: 0.9375vw;
   font-weight: 500;
   line-height: 135%;
@@ -432,6 +429,14 @@ label {
 
 .h-info__text--bold {
   font-weight: 600;
+}
+
+.h-info__text:last-child {
+  margin-bottom: 0;
+}
+
+.h-info__text:hover {
+  text-decoration: underline;
 }
 
 .header-mob-menu-btn {
@@ -1254,7 +1259,7 @@ label {
 }
 
 .contacts-box__link {
-  display: inline-block;
+  display: block;
   font-size: 0.875vw;
   line-height: 178.9%;
 }
@@ -1266,6 +1271,10 @@ label {
 
 .contacts-box__link_inner {
   display: block;
+}
+
+.contacts-box__link:hover {
+  text-decoration: underline;
 }
 
 .footer__inner {
@@ -1409,6 +1418,7 @@ label {
   }
 
   .h-info__text {
+    margin-bottom: 1vw;
     font-size: 3.75vw;
   }
 

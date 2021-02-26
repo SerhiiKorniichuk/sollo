@@ -53,7 +53,7 @@
 	}
 
 	&__link {
-		display: inline-block;
+		display: block;
 		font-size: 0.875vw;
 		line-height: 178.9%;
 
@@ -64,6 +64,10 @@
 
 		&_inner {
 			display: block;
+		}
+
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }

@@ -24,7 +24,7 @@
 	}
 
 	&__mob-info {
-		padding: 0 6.25vw;
+		padding: 0 2.25vw;
 		margin: 7.1875vw 0;
 		display: none;
 
@@ -82,17 +82,22 @@
 		width: 35%;
 	}
 
-	&__text-box {
-		max-width: 14.1875vw;
-	}
-
 	&__text {
+		margin-bottom: 0.2vw;
 		font-size: 0.9375vw;
 		font-weight: 500;
 		line-height: 135%;
 
 		&--bold {
 			font-weight: 600;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }
@@ -220,6 +225,7 @@
 		}
 
 		&__text {
+			margin-bottom: 1vw;
 			font-size: 3.75vw;
 		}
 	}

@@ -13,7 +13,7 @@
 	//От кого письмо
 	$mail->setFrom('support@post.ua', 'ПП "Солло"');
 	//Кому отправить
-	$mail->addAddress('skorniychyk@gmail.com');
+	$mail->addAddress('oleg@custom.kiev.ua');
 	//Тема письма
 	$mail->Subject = 'Заявка с сайта';
 
